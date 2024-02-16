@@ -1,0 +1,21 @@
+{
+  "name": "swarms-worker",
+  "version": "1.0.0",
+  "description": "Python example for Swarms and Cloudflare Workers",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "webpack -c webpack.config.js"
+  },
+  "keywords": [],
+  "author": "{{ authors }}",
+  "license": "MIT",
+  "devDependencies": {
+    "transcrypt-loader": "^1.0.2",
+    "webpack": "^5.76.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "wrangler": "^3.28.2"
+  }
+}
