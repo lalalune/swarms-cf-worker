@@ -1,12 +1,18 @@
-# Python hello world for Cloudflare Workers
+# Example of running Swarms AI agent in CF Worker
 
-Your Python code in [index.py](https://github.com/cloudflare/python-worker-hello-world/blob/master/index.py), running on Cloudflare Workers.
-
-In addition to [Wrangler](https://github.com/cloudflare/wrangler2) and [npm](https://www.npmjs.com/get-npm), you will need to install [Transcrypt](https://www.transcrypt.org/docs/html/installation_use.html), including Python 3.7 and virtualenv.
+## Quickstart
+```
+npm install
+virtualenv env
+source env/bin/activate
+pip install transcrypt swarms
+npm run build
+npm run dev # worker will startup locally
+npx wrangler publish # deploy to cloud
+```
 
 #### Wrangler
 
-- Clone repository (`git clone https://github.com/cloudflare/python-worker-hello-world`)
 - Run `npm install`
 - Update `wrangler.toml` with your project `name`, `account_id`, and `route` as required
 
